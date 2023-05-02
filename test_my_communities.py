@@ -13,7 +13,7 @@ def test_my_communities():
     time.sleep(2)
     link_communities = driver.find_element(By.CLASS_NAME, 'evnt-my-communities')
     assert link_communities is not None
-    assert link_communities.text== "MY COMMUNITIES"
+    assert link_communities.text == "MY COMMUNITIES"
     link_communities.click()
     assert driver.current_url == "https://wearecommunity.io/user-profile"
     driver.close()
