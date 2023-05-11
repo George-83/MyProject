@@ -20,10 +20,14 @@ Name of test - some test
     open browser            https://www.vanguardmotorsales.com/     chrome
 
     #Setup creen size
-    set window position    x=341    y=169
-    set window size        width=1500   height=1000
+    set window size        width=1600   height=1000
 
-    sleep                  3s
+    sleep                  1s
+    page should contain    We Are Dedicated to Parking
+    click link             xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a
+    page should contain    Classic & Muscle Cars for Sale
+    click element          xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a
+    click link             Ford
     close browser
 
 
