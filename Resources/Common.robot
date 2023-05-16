@@ -9,7 +9,8 @@ Begin Web Test
     log                    Starting the test case
     open browser           about:blank  ${BROWSER}
     #Setup creen size
-    set window size        width=1600   height=1000
+    #set window size        width=1600   height=1000
+    maximize browser window
 
 End Web Test
     close browser

@@ -1,221 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230516 10:40:02.579" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230516 19:53:40.952" rpa="false" schemaversion="3">
 <suite id="s1" name="Vanguard" source="C:\Users\Georgii_Bordukov\PycharmProjects\test_io\tests\Vanguard.robot">
 <test id="s1-t1" name="Name of test - Search for Ford" line="15">
 <kw name="Begin Web Test" library="Common" type="SETUP">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230516 10:40:02.912" endtime="20230516 10:40:02.912"/>
+<status status="PASS" starttime="20230516 19:53:41.153" endtime="20230516 19:53:41.153"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20230516 10:40:02.912" endtime="20230516 10:40:02.912"/>
+<status status="PASS" starttime="20230516 19:53:41.153" endtime="20230516 19:53:41.153"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Starting the test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230516 10:40:02.913" level="INFO">Starting the test case</msg>
-<status status="PASS" starttime="20230516 10:40:02.913" endtime="20230516 10:40:02.913"/>
+<msg timestamp="20230516 19:53:41.153" level="INFO">Starting the test case</msg>
+<status status="PASS" starttime="20230516 19:53:41.153" endtime="20230516 19:53:41.153"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230516 10:40:02.913" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230516 10:40:02.913" endtime="20230516 10:40:04.472"/>
+<msg timestamp="20230516 19:53:41.153" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230516 19:53:41.153" endtime="20230516 19:53:42.561"/>
 </kw>
-<kw name="Set Window Size" library="SeleniumLibrary">
-<arg>width=1600</arg>
-<arg>height=1000</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230516 10:40:04.472" endtime="20230516 10:40:04.787"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230516 19:53:42.562" endtime="20230516 19:53:42.883"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:02.912" endtime="20230516 10:40:04.787"/>
+<status status="PASS" starttime="20230516 19:53:41.153" endtime="20230516 19:53:42.883"/>
 </kw>
 <kw name="Search For Ford Model" library="Vanguard">
 <kw name="Load" library="HomePage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${START_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230516 10:40:04.788" level="INFO">Opening url 'https://www.vanguardmotorsales.com/'</msg>
-<status status="PASS" starttime="20230516 10:40:04.787" endtime="20230516 10:40:07.140"/>
+<msg timestamp="20230516 19:53:42.886" level="INFO">Opening url 'https://www.vanguardmotorsales.com/'</msg>
+<status status="PASS" starttime="20230516 19:53:42.886" endtime="20230516 19:53:46.303"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:04.787" endtime="20230516 10:40:07.140"/>
+<status status="PASS" starttime="20230516 19:53:42.885" endtime="20230516 19:53:46.303"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230516 10:40:08.141" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230516 10:40:07.140" endtime="20230516 10:40:08.141"/>
+<msg timestamp="20230516 19:53:47.303" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230516 19:53:46.303" endtime="20230516 19:53:47.303"/>
 </kw>
 <kw name="Verify Page Loaded" library="HomePage">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>We Are Dedicated to Parking</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230516 10:40:08.594" level="INFO">Current page contains text 'We Are Dedicated to Parking'.</msg>
-<status status="PASS" starttime="20230516 10:40:08.144" endtime="20230516 10:40:08.594"/>
+<msg timestamp="20230516 19:53:47.733" level="INFO">Current page contains text 'We Are Dedicated to Parking'.</msg>
+<status status="PASS" starttime="20230516 19:53:47.304" endtime="20230516 19:53:47.733"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:08.142" endtime="20230516 10:40:08.594"/>
+<status status="PASS" starttime="20230516 19:53:47.303" endtime="20230516 19:53:47.733"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:08.596" level="INFO">Clicking link 'xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:08.594" endtime="20230516 10:40:12.547"/>
+<msg timestamp="20230516 19:53:47.734" level="INFO">Clicking link 'xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230516 19:53:47.733" endtime="20230516 19:53:51.934"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Classic &amp; Muscle Cars for Sale</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230516 10:40:12.968" level="INFO">Current page contains text 'Classic &amp; Muscle Cars for Sale'.</msg>
-<status status="PASS" starttime="20230516 10:40:12.547" endtime="20230516 10:40:12.968"/>
+<msg timestamp="20230516 19:53:52.361" level="INFO">Current page contains text 'Classic &amp; Muscle Cars for Sale'.</msg>
+<status status="PASS" starttime="20230516 19:53:51.934" endtime="20230516 19:53:52.361"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:12.968" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:12.968" endtime="20230516 10:40:13.524"/>
+<msg timestamp="20230516 19:53:52.361" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a'.</msg>
+<status status="PASS" starttime="20230516 19:53:52.361" endtime="20230516 19:53:52.919"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>Ford</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:13.524" level="INFO">Clicking link 'Ford'.</msg>
-<status status="PASS" starttime="20230516 10:40:13.524" endtime="20230516 10:40:15.325"/>
+<msg timestamp="20230516 19:53:52.919" level="INFO">Clicking link 'Ford'.</msg>
+<status status="PASS" starttime="20230516 19:53:52.919" endtime="20230516 19:53:55.093"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:04.787" endtime="20230516 10:40:15.325"/>
+<status status="PASS" starttime="20230516 19:53:42.884" endtime="20230516 19:53:55.093"/>
 </kw>
 <kw name="End Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230516 10:40:15.325" endtime="20230516 10:40:17.680"/>
+<status status="PASS" starttime="20230516 19:53:55.094" endtime="20230516 19:53:57.416"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:15.325" endtime="20230516 10:40:17.681"/>
+<status status="PASS" starttime="20230516 19:53:55.093" endtime="20230516 19:53:57.416"/>
 </kw>
 <doc>Some other information</doc>
 <tag>HomePage</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20230516 10:40:02.911" endtime="20230516 10:40:17.681"/>
+<status status="PASS" starttime="20230516 19:53:41.152" endtime="20230516 19:53:57.418"/>
 </test>
 <test id="s1-t2" name="Name of test - Search for Ford car 1965" line="21">
 <kw name="Begin Web Test" library="Common" type="SETUP">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230516 10:40:17.690" endtime="20230516 10:40:17.690"/>
+<status status="PASS" starttime="20230516 19:53:57.424" endtime="20230516 19:53:57.424"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20230516 10:40:17.690" endtime="20230516 10:40:17.690"/>
+<status status="PASS" starttime="20230516 19:53:57.424" endtime="20230516 19:53:57.424"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Starting the test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230516 10:40:17.690" level="INFO">Starting the test case</msg>
-<status status="PASS" starttime="20230516 10:40:17.690" endtime="20230516 10:40:17.690"/>
+<msg timestamp="20230516 19:53:57.428" level="INFO">Starting the test case</msg>
+<status status="PASS" starttime="20230516 19:53:57.428" endtime="20230516 19:53:57.428"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230516 10:40:17.690" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230516 10:40:17.690" endtime="20230516 10:40:19.106"/>
+<msg timestamp="20230516 19:53:57.430" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230516 19:53:57.429" endtime="20230516 19:53:58.864"/>
 </kw>
-<kw name="Set Window Size" library="SeleniumLibrary">
-<arg>width=1600</arg>
-<arg>height=1000</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230516 10:40:19.106" endtime="20230516 10:40:19.441"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230516 19:53:58.864" endtime="20230516 19:53:59.199"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:17.688" endtime="20230516 10:40:19.441"/>
+<status status="PASS" starttime="20230516 19:53:57.423" endtime="20230516 19:53:59.199"/>
 </kw>
 <kw name="Search For Ford Model" library="Vanguard">
 <kw name="Load" library="HomePage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${START_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230516 10:40:19.443" level="INFO">Opening url 'https://www.vanguardmotorsales.com/'</msg>
-<status status="PASS" starttime="20230516 10:40:19.443" endtime="20230516 10:40:22.491"/>
+<msg timestamp="20230516 19:53:59.200" level="INFO">Opening url 'https://www.vanguardmotorsales.com/'</msg>
+<status status="PASS" starttime="20230516 19:53:59.200" endtime="20230516 19:54:01.344"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:19.443" endtime="20230516 10:40:22.491"/>
+<status status="PASS" starttime="20230516 19:53:59.200" endtime="20230516 19:54:01.344"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230516 10:40:23.492" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230516 10:40:22.491" endtime="20230516 10:40:23.492"/>
+<msg timestamp="20230516 19:54:02.345" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230516 19:54:01.344" endtime="20230516 19:54:02.345"/>
 </kw>
 <kw name="Verify Page Loaded" library="HomePage">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>We Are Dedicated to Parking</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230516 10:40:23.929" level="INFO">Current page contains text 'We Are Dedicated to Parking'.</msg>
-<status status="PASS" starttime="20230516 10:40:23.492" endtime="20230516 10:40:23.929"/>
+<msg timestamp="20230516 19:54:02.773" level="INFO">Current page contains text 'We Are Dedicated to Parking'.</msg>
+<status status="PASS" starttime="20230516 19:54:02.345" endtime="20230516 19:54:02.773"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:23.492" endtime="20230516 10:40:23.930"/>
+<status status="PASS" starttime="20230516 19:54:02.345" endtime="20230516 19:54:02.773"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:23.931" level="INFO">Clicking link 'xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:23.930" endtime="20230516 10:40:27.618"/>
+<msg timestamp="20230516 19:54:02.773" level="INFO">Clicking link 'xpath=//*[@id="wrap"]/div[1]/div/div[3]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230516 19:54:02.773" endtime="20230516 19:54:05.982"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Classic &amp; Muscle Cars for Sale</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230516 10:40:28.038" level="INFO">Current page contains text 'Classic &amp; Muscle Cars for Sale'.</msg>
-<status status="PASS" starttime="20230516 10:40:27.618" endtime="20230516 10:40:28.038"/>
+<msg timestamp="20230516 19:54:06.433" level="INFO">Current page contains text 'Classic &amp; Muscle Cars for Sale'.</msg>
+<status status="PASS" starttime="20230516 19:54:05.982" endtime="20230516 19:54:06.433"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:28.038" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:28.038" endtime="20230516 10:40:28.600"/>
+<msg timestamp="20230516 19:54:06.434" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li/a'.</msg>
+<status status="PASS" starttime="20230516 19:54:06.433" endtime="20230516 19:54:07.021"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>Ford</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:28.600" level="INFO">Clicking link 'Ford'.</msg>
-<status status="PASS" starttime="20230516 10:40:28.600" endtime="20230516 10:40:30.549"/>
+<msg timestamp="20230516 19:54:07.022" level="INFO">Clicking link 'Ford'.</msg>
+<status status="PASS" starttime="20230516 19:54:07.021" endtime="20230516 19:54:08.930"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:19.442" endtime="20230516 10:40:30.549"/>
+<status status="PASS" starttime="20230516 19:53:59.200" endtime="20230516 19:54:08.930"/>
 </kw>
 <kw name="Search 1965 Year" library="Vanguard">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:30.552" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:30.551" endtime="20230516 10:40:31.151"/>
+<msg timestamp="20230516 19:54:08.932" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/a'.</msg>
+<status status="PASS" starttime="20230516 19:54:08.930" endtime="20230516 19:54:09.525"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/ul/li[5]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230516 10:40:31.151" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/ul/li[5]/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:31.151" endtime="20230516 10:40:32.358"/>
+<msg timestamp="20230516 19:54:09.526" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/ul/li/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20230516 19:54:09.525" endtime="20230516 19:54:10.980"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/a</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230516 10:40:32.573" level="INFO">Current page contains element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/a'.</msg>
-<status status="PASS" starttime="20230516 10:40:32.358" endtime="20230516 10:40:32.573"/>
+<msg timestamp="20230516 19:54:11.196" level="INFO">Current page contains element 'xpath=//*[@id="content"]/div/div[2]/div/div[2]/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20230516 19:54:10.980" endtime="20230516 19:54:11.196"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:30.550" endtime="20230516 10:40:32.573"/>
+<status status="PASS" starttime="20230516 19:54:08.930" endtime="20230516 19:54:11.197"/>
 </kw>
 <kw name="End Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230516 10:40:32.574" endtime="20230516 10:40:34.856"/>
+<status status="PASS" starttime="20230516 19:54:11.200" endtime="20230516 19:54:13.507"/>
 </kw>
-<status status="PASS" starttime="20230516 10:40:32.573" endtime="20230516 10:40:34.856"/>
+<status status="PASS" starttime="20230516 19:54:11.198" endtime="20230516 19:54:13.507"/>
 </kw>
 <doc>Some other information</doc>
 <tag>HomePage</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20230516 10:40:17.686" endtime="20230516 10:40:34.857"/>
+<status status="PASS" starttime="20230516 19:53:57.422" endtime="20230516 19:54:13.508"/>
 </test>
 <doc>This is some basic information about whole suite</doc>
-<status status="PASS" starttime="20230516 10:40:02.580" endtime="20230516 10:40:34.861"/>
+<status status="PASS" starttime="20230516 19:53:40.952" endtime="20230516 19:54:13.512"/>
 </suite>
 <statistics>
 <total>
