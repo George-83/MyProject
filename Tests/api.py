@@ -48,3 +48,32 @@ def test_open_file():
 def test_os_name():
     print('\n', p.uname())
 
+
+class Person:
+    name = "Ivan"
+    age = 29
+
+
+def test_2():
+    vlad = Person()
+    print(Person.age, "\n", Person.name)
+
+
+def test_3(name, age, height):
+    result = name + age + height
+    print(result)
+
+
+def test_5():
+    print(test_3("Igor", "28", "189"))
+
+
+def test_6():
+    response = requests.get("https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&categoryId=televizory&sortType=price_asc&limit=19")
+    response_json = response.json()
+    pretty_response = json.dumps(response_json, indent=4)
+    print(pretty_response)
+    assert response.status_code == 200
+    sch.close()
+
+
