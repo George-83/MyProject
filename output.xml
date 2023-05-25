@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 16:29:10.164" rpa="false" schemaversion="3">
+<suite id="s1" name="MyProject" source="C:\Users\Georgii_Bordukov\PycharmProjects\MyProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\Georgii_Bordukov\PycharmProjects\MyProject\Tests">
+<suite id="s1-s1-s1" name="Swapi" source="C:\Users\Georgii_Bordukov\PycharmProjects\MyProject\Tests\swapi.robot">
+<test id="s1-s1-s1-t1" name="Success GET request to swapi/pepole" line="10">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${URL}</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230525 16:29:10.961" level="INFO">GET Request : url=https://swapi.dev/api/people/1/ 
+ path_url=/api/people/1/ 
+ headers={'User-Agent': 'python-requests/2.30.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230525 16:29:10.961" level="INFO">GET Response : url=https://swapi.dev/api/people/1/ 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.16.1', 'Date': 'Thu, 25 May 2023 13:29:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'ETag': '"ee398610435c328f4d0a4e1b0d2f7bbc"', 'Allow': 'GET, HEAD, OPTIONS', 'Strict-Transport-Security': 'max-age=15768000'} 
+ body={"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"} 
+ </msg>
+<msg timestamp="20230525 16:29:10.962" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230525 16:29:10.302" endtime="20230525 16:29:10.962"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${response_body}</var>
+<arg>${response.content}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230525 16:29:10.963" level="INFO">${response_body} = {"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","fil...</msg>
+<status status="PASS" starttime="20230525 16:29:10.962" endtime="20230525 16:29:10.963"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${response_json}</var>
+<arg>json.dumps(${response_body}, indent=4)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230525 16:29:10.963" level="INFO">${response_json} = {
+    "name": "Luke Skywalker",
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+  ...</msg>
+<status status="PASS" starttime="20230525 16:29:10.963" endtime="20230525 16:29:10.963"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${response_json}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230525 16:29:10.964" endtime="20230525 16:29:10.965"/>
+</kw>
+<status status="PASS" starttime="20230525 16:29:10.302" endtime="20230525 16:29:10.965"/>
+</test>
+<status status="PASS" starttime="20230525 16:29:10.193" endtime="20230525 16:29:10.967"/>
+</suite>
+<status status="PASS" starttime="20230525 16:29:10.190" endtime="20230525 16:29:10.969"/>
+</suite>
+<status status="PASS" starttime="20230525 16:29:10.170" endtime="20230525 16:29:10.970"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MyProject">MyProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">MyProject.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Swapi">MyProject.Tests.Swapi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

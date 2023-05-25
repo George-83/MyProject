@@ -1,76 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 13:33:05.361" rpa="false" schemaversion="3">
-<suite id="s1" name="Kcentr Ru" source="C:\Users\Georgii_Bordukov\PycharmProjects\test_io\tests\kcentr_ru.robot">
-<test id="s1-t1" name="GET request price_asc" line="12">
-<kw name="Create Session" library="RequestsLibrary">
-<arg>my session</arg>
-<arg>${URL}}</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20230525 13:33:05.532" level="INFO">Creating Session using : alias=my session, url=https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&amp;cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&amp;categoryId=televizory&amp;sortType=price_asc&amp;limit=19}, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20230525 13:33:05.531" endtime="20230525 13:33:05.532"/>
-</kw>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 16:02:35.006" rpa="false" schemaversion="3">
+<suite id="s1" name="Swapi" source="C:\Users\Georgii_Bordukov\PycharmProjects\MyProject\tests\swapi.robot">
+<test id="s1-t1" name="Success GET request to swapi/pepole" line="10">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${URL}</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230525 13:33:06.980" level="INFO">GET Request : url=https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&amp;cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&amp;categoryId=televizory&amp;sortType=price_asc&amp;limit=19 
- path_url=/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&amp;cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&amp;categoryId=televizory&amp;sortType=price_asc&amp;limit=19 
+<msg timestamp="20230525 16:02:37.363" level="INFO">GET Request : url=https://swapi.dev/api/people/1/ 
+ path_url=/api/people/1/ 
  headers={'User-Agent': 'python-requests/2.30.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230525 13:33:06.984" level="INFO">GET Response : url=https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&amp;cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&amp;categoryId=televizory&amp;sortType=price_asc&amp;limit=19 
+<msg timestamp="20230525 16:02:37.363" level="INFO">GET Response : url=https://swapi.dev/api/people/1/ 
  status=200, reason=OK 
- headers={'Date': 'Thu, 25 May 2023 10:33:06 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'PHP/8.1.13', 'access-control-allow-origin': 'https://admin.kcentr.ru', 'vary': 'Origin, Accept-Encoding', 'Cache-Control': 'max-age=1, private', 'Content-Encoding': 'gzip', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9xxz3%2BHjLXMipDoEhN23HMXI42XGvmJBEcpo0bV7yCB8T0VxWq2PW1rTdbI3p55Kyak2jnUNj%2BbnY%2FMM3JKNXFR8%2BPL%2BTokwrmdgT6Xm%2BJcU7pHqJYt8M9I8RXg%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7ccd1e42fb56313e-SOF', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
- body={"paging":{"totalCount":376,"pageSize":19},"products":[{"uuid":"604ea067-d08f-11ed-9454-e41f13fe3f98","slug":"televizor_digma_dm_led24mbb21","name":"\u0422\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440 Digma DM-LED24MBB21 24\"","images":[{"original":"/uploads/product/2023/1154259/photo/34dbff170c0000b51095465f7be1470a65fc8a64.jpeg","template":"/uploads/product/2023/1154259/photo/34dbff170c0000b51095465f7be1470a65fc8a64_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1154259/photo/2ba1213d9dc73966568df314d105cae66954358e.jpeg","template":"/uploads/product/2023/1154259/photo/2ba1213d9dc73966568df314d105cae66954358e_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1154259/photo/5b0dc12a7db9f0b6143bb7f684a615b6336a9dfa.jpeg","template":"/uploads/product/2023/1154259/photo/5b0dc12a7db9f0b6143bb7f684a615b6336a9dfa_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1154259/photo/472ef447ca0581602b0a9431b400a5165aa39b65.jpeg","template":"/uploads/product/2023/1154259/photo/472ef447ca0581602b0a9431b400a5165aa39b65_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1154259/photo/f84993ca765bbf064d84639f867ccc68b9983d59.jpeg","template":"/uploads/product/2023/1154259/photo/f84993ca765bbf064d84639f867ccc68b9983d59_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1154259/photo/57e6e8ddf6e95d2a33deb6d2c4522ef76b1d9265.jpeg","template":"/uploads/product/2023/1154259/photo/57e6e8ddf6e95d2a33deb6d2c4522ef76b1d9265_PHOTO_SIZE.jpg"}],"price":6589,"oldPrice":7599,"availability":2,"quantityAvailable":0,"availableShopsCount":1,"rating":4.3,"reviewsCount":0,"mainCharacteristics":[{"name":"\u0414\u0438\u0430\u0433\u043e\u043d\u0430\u043b\u044c","value":"24\" (61 \u0441\u043c)"},{"name":"\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u0435","value":"HD (1366x768)"},{"name":"Smart TV","value":"\u043d\u0435\u0442"}],"instalmentPayments":{"numberOfMonths":6,"monthlyPayment":1099},"offers":[{"name":"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e  \u0432 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0443","slug":"dostupno_v_rassrochku","bgColor":"#4B0082","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/rassrochka_bez_pereplat/","labels":[{"id":647,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 0-0-6","slug":"onlayn_rassrochka_0_0_6","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u043d\u0430 6 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435. \u0412 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u043e\u0442\u043b\u0438\u0447\u0430\u0442\u044c\u0441\u044f.&lt;/p&gt;","bgColor":"#C71585","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/online_rassrochki/?from=promo-tag"},{"id":1209,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0431\u0430\u043d\u043a\u043e\u0432 70-0-3","slug":"rassrochka_bez_bankov_70_0_3","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0443\u0447\u0430\u0441\u0442\u0438\u044f \u0431\u0430\u043d\u043a\u043e\u0432 \u043d\u0430 3 \u043c\u0435\u0441\u044f\u0446\u0430 \u0441 \u043f\u0435\u0440\u0432\u043e\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u044b\u043c \u0432\u0437\u043d\u043e\u0441\u043e\u043c 70%.&lt;/p&gt;"}]},{"id":197,"name":"\u041d\u043e\u0432\u0438\u043d\u043a\u0430","slug":"novinka","bgColor":"#2980b9","textColor":"#FFFFFF"},{"id":2084,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0438 \u043e\u0442 \u0425\u0430\u043b\u0432\u044b!","slug":"khalva_nedelya_umnykh_rassrochek","bgColor":"#FF69B4","textColor":"#ffffff","url":"https://kcentr.ru/sale/khalva_nedelya_umnykh_rassrochek/"}],"articul":"1445312","isDefective":false,"isIlliquid":false,"isFavorite":false,"isCompare":false},{"uuid":"5939b5ea-c873-11ed-9454-e41f13fe3f98","slug":"televizor_starwind_6","name":"\u0422\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440 Starwind SW-LED24BG202","images":[{"original":"/uploads/product/2023/1148551/photo/e9ee82e2191296ae63f6e42a8f6ca799e7303ec6.jpg","template":"/uploads/product/2023/1148551/photo/e9ee82e2191296ae63f6e42a8f6ca799e7303ec6_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1148551/photo/50b2606fe29bbd98f3734f994a74bb18f274d290.jpg","template":"/uploads/product/2023/1148551/photo/50b2606fe29bbd98f3734f994a74bb18f274d290_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1148551/photo/8cdfdffc1fe0c08e2e83bc119a365123b410f58b.jpg","template":"/uploads/product/2023/1148551/photo/8cdfdffc1fe0c08e2e83bc119a365123b410f58b_PHOTO_SIZE.jpg"}],"price":6689,"oldPrice":7699,"availability":2,"quantityAvailable":0,"availableShopsCount":1,"rating":4.5,"reviewsCount":0,"mainCharacteristics":[{"name":"\u0414\u0438\u0430\u0433\u043e\u043d\u0430\u043b\u044c","value":"24\" (61 \u0441\u043c)"},{"name":"\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u0435","value":"HD (1366x768)"},{"name":"Smart TV","value":"\u043d\u0435\u0442"}],"instalmentPayments":{"numberOfMonths":6,"monthlyPayment":1115},"offers":[{"name":"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e  \u0432 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0443","slug":"dostupno_v_rassrochku","bgColor":"#4B0082","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/rassrochka_bez_pereplat/","labels":[{"id":647,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 0-0-6","slug":"onlayn_rassrochka_0_0_6","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u043d\u0430 6 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435. \u0412 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u043e\u0442\u043b\u0438\u0447\u0430\u0442\u044c\u0441\u044f.&lt;/p&gt;","bgColor":"#C71585","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/online_rassrochki/?from=promo-tag"},{"id":1209,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0431\u0430\u043d\u043a\u043e\u0432 70-0-3","slug":"rassrochka_bez_bankov_70_0_3","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0443\u0447\u0430\u0441\u0442\u0438\u044f \u0431\u0430\u043d\u043a\u043e\u0432 \u043d\u0430 3 \u043c\u0435\u0441\u044f\u0446\u0430 \u0441 \u043f\u0435\u0440\u0432\u043e\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u044b\u043c \u0432\u0437\u043d\u043e\u0441\u043e\u043c 70%.&lt;/p&gt;"}]},{"id":197,"name":"\u041d\u043e\u0432\u0438\u043d\u043a\u0430","slug":"novinka","bgColor":"#2980b9","textColor":"#FFFFFF"},{"id":2084,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0438 \u043e\u0442 \u0425\u0430\u043b\u0432\u044b!","slug":"khalva_nedelya_umnykh_rassrochek","bgColor":"#FF69B4","textColor":"#ffffff","url":"https://kcentr.ru/sale/khalva_nedelya_umnykh_rassrochek/"}],"articul":"1443295","isDefective":false,"isIlliquid":false,"isFavorite":false,"isCompare":false},{"uuid":"468d6cca-9305-11ed-9453-e41f13fe3f98","slug":"televizor_telefunken_tf_led24s20t2_h","name":"\u0422\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440 Telefunken TF-LED24S20T2/H","images":[{"original":"/uploads/product/2023/1120554/photo/1d981c684d01260f331a8f739f53e519a89550cd.jpg","template":"/uploads/product/2023/1120554/photo/1d981c684d01260f331a8f739f53e519a89550cd_PHOTO_SIZE.jpg"},{"original":"/uploads/product/2023/1120554/photo/eb80880b283fa7500a28a4b903437948a4cacac0.jpg","template":"/uploads/product/2023/1120554/photo/eb80880b283fa7500a28a4b903437948a4cacac0_PHOTO_SIZE.jpg"}],"price":7000,"oldPrice":0,"availability":2,"quantityAvailable":0,"availableShopsCount":0,"rating":4.5,"reviewsCount":0,"mainCharacteristics":[{"name":"\u0414\u0438\u0430\u0433\u043e\u043d\u0430\u043b\u044c","value":"24\" (61 \u0441\u043c)"},{"name":"\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u0435","value":"HD (1366x768)"},{"name":"Smart TV","value":"\u043d\u0435\u0442"}],"instalmentPayments":{"numberOfMonths":6,"monthlyPayment":1167},"offers":[{"name":"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e  \u0432 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0443","slug":"dostupno_v_rassrochku","bgColor":"#4B0082","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/rassrochka_bez_pereplat/","labels":[{"id":647,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 0-0-6","slug":"onlayn_rassrochka_0_0_6","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u043d\u0430 6 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435. \u0412 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u043e\u0442\u043b\u0438\u0447\u0430\u0442\u044c\u0441\u044f.&lt;/p&gt;","bgColor":"#C71585","textColor":"#FFFFFF","url":"https://kcentr.ru/sale/online_rassrochki/?from=promo-tag"},{"id":1209,"name":"\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0431\u0430\u043d\u043a\u043e\u0432 70-0-3","slug":"rassrochka_bez_bankov_70_0_3","description":"&lt;p&gt;\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0440\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430 \u0431\u0435\u0437 \u0443\u0447\u0430\u0441\u0442\u0438\u044f \u0431\u0430\u043d\u043a\u043e\u0432 \u043d\u0430 3 \u043c\u0435\u0441\u044f\u0446\u0430 \u04... (set the log level to DEBUG or TRACE to see the full content) 
+ headers={'Server': 'nginx/1.16.1', 'Date': 'Thu, 25 May 2023 13:02:37 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'ETag': '"ee398610435c328f4d0a4e1b0d2f7bbc"', 'Allow': 'GET, HEAD, OPTIONS', 'Strict-Transport-Security': 'max-age=15768000'} 
+ body={"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"} 
  </msg>
-<msg timestamp="20230525 13:33:06.985" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230525 13:33:05.533" endtime="20230525 13:33:06.985"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${response_body}</var>
-<arg>${response.content}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230525 13:33:06.989" level="INFO">${response_body} = {"paging":{"totalCount":376,"pageSize":19},"products":[{"uuid":"604ea067-d08f-11ed-9454-e41f13fe3f98","slug":"televizor_digma_dm_led24mbb21","name":"\u0422\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0...</msg>
-<status status="PASS" starttime="20230525 13:33:06.987" endtime="20230525 13:33:06.989"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${response_json}</var>
-<arg>evaluate</arg>
-<arg>json.loads('''${response_body}''')</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230525 13:33:06.995" level="INFO">${response_json} = ['evaluate', 'json.loads(\'\'\'{"paging":{"totalCount":376,"pageSize":19},"products":[{"uuid":"604ea067-d08f-11ed-9454-e41f13fe3f98","slug":"televizor_digma_dm_led24mbb21","name":"\\u0422\\u0435\\u043...</msg>
-<status status="PASS" starttime="20230525 13:33:06.990" endtime="20230525 13:33:06.995"/>
-</kw>
-<kw name="Sort List" library="Collections">
-<var>${sorted_response}</var>
-<arg>${response_json}</arg>
-<arg>key=lambda x: x['price']</arg>
-<doc>Sorts the given list in place.</doc>
-<msg timestamp="20230525 13:33:06.997" level="FAIL">Keyword 'Collections.Sort List' expected 1 argument, got 2.</msg>
-<status status="FAIL" starttime="20230525 13:33:06.996" endtime="20230525 13:33:06.997"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${sorted_response.json()}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20230525 13:33:06.999" endtime="20230525 13:33:06.999"/>
+<msg timestamp="20230525 16:02:37.363" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230525 16:02:35.210" endtime="20230525 16:02:37.363"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sorted_response.json()}</arg>
+<arg>${response}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230525 13:33:07.000" endtime="20230525 13:33:07.000"/>
+<status status="PASS" starttime="20230525 16:02:37.370" endtime="20230525 16:02:37.372"/>
 </kw>
-<status status="FAIL" starttime="20230525 13:33:05.531" endtime="20230525 13:33:07.002">Keyword 'Collections.Sort List' expected 1 argument, got 2.</status>
+<status status="PASS" starttime="20230525 16:02:35.210" endtime="20230525 16:02:37.373"/>
 </test>
-<status status="FAIL" starttime="20230525 13:33:05.362" endtime="20230525 13:33:07.006"/>
+<status status="PASS" starttime="20230525 16:02:35.007" endtime="20230525 16:02:37.377"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Kcentr Ru">Kcentr Ru</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Swapi">Swapi</stat>
 </suite>
 </statistics>
 <errors>
