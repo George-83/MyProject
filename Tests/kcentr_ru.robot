@@ -12,11 +12,10 @@ ${URL} =    https://kcentr.ru/content-service/api/desktop/v1/products?visitorUui
 GET request price_asc
     Create Session  my session  ${URL}}
     ${response} =    GET  ${URL}
-    ${response_body}    set variable    ${response.content}
-    ${response_json}    set variable    evaluate    json.loads('''${response_body}''')
-    ${sorted_response}    sort list    ${response_json}    key=lambda x: x['price']
-    log    ${sorted_response.json()}
-    log to console   ${sorted_response.json()}
+    ${response_json}   Set Variable    ${response.json()}
+    ${response_json_pretty} =   Evaluate    json.dumps(${response_json}, indent=4)
+    Log To Console    ${response_json_pretty}
+    Log To Console    ${response_json_pretty.__class__}
 
 
 
