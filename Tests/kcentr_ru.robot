@@ -13,9 +13,11 @@ GET request price_asc
     Create Session  my session  ${URL}}
     ${response} =    GET  ${URL}
     ${response_json}   Set Variable    ${response.json()}
+    ${response_json_products}   Set Variable    ${response_json["products"]}
+    ${response_json_products_sorted}    Sort List
     ${response_json_pretty} =   Evaluate    json.dumps(${response_json}, indent=4)
-    Log To Console    ${response_json_pretty}
-    Log To Console    ${response_json_pretty.__class__}
+    Log To Console    ${response_json_products.__class__}
+    Log To Console    ${response_json_products}
 
 
 
