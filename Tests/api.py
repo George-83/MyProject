@@ -41,7 +41,8 @@ def test_swapi():
 
 
 def test_kcentr_ru():
-    response = requests.get("https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&categoryId=televizory&sortType=price_asc&limit=19")
+    response = requests.get(
+        "https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&categoryId=televizory&sortType=price_asc&limit=19")
     response_json = response.json()
     response_json_products = response_json["products"]
     pretty_response_products = json.dumps(response_json_products, indent=4)
@@ -80,18 +81,19 @@ def test_5():
     print(test_3("Igor", "28", "189"))
 
 
-def test_6():
-    response = requests.get("https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&categoryId=televizory&sortType=price_asc&limit=19")
+# Test Suite for website kcentr.ru
+@pytest.mark.kcenter_api_tests
+def test_sorted_price_asc():
+    response = requests.get(
+        "https://kcentr.ru/content-service/api/desktop/v1/products?visitorUuid=8485f7ea-f2e7-4478-aff3-e8fe3b0f3cf0&cityUuid=deb1d05a-71ce-40d1-b726-6ba85d70d58f&categoryId=televizory&sortType=price_asc&limit=19")
     response_json = response.json()
-    # pretty_response = json.dumps(response_json, indent=4)
     response_products = response_json["products"]
-    # comparator = response_json["products"][0]["price"]
     sorted_by_price = sorted(response_products, key=lambda x: x["price"], reverse=False)
+    # pretty_response = json.dumps(response_json, indent=4)
+    # comparator = response_json["products"][0]["price"]
     # sorted_by_price_pretty = json.dumps(sorted_by_price, indent=4)
     # response_products_pretty = json.dumps(response_products, indent=4)
     # print(sorted_by_price.__class__)
-    # print(sorted_by_price_pretty)
+    # print(response_products_pretty)
     # assert response.status_code == 200
     assert sorted_by_price == response_products
-
-

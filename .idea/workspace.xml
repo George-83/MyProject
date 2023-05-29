@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/kcentr_ru.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/kcentr_ru.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-    </list>
+    <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +32,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for api.test_6">
+  <component name="RunManager" selected="Python tests.Python tests for api.test_sorted_price_asc">
     <configuration name="GET request price_asc" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,27 +47,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
       <option name="PARAMETERS" value="--test &quot;MyProject.Tests.kcentr_ru.GET request price_asc&quot; ." />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Success GET request to swapi/pepole" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Georgii_Bordukov\AppData\Local\Programs\Python\Python311\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value="--test &quot;MyProject.Tests.swapi.Success GET request to swapi/pepole&quot; ." />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="true" />
@@ -110,6 +82,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for api.test_sorted_price_asc" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;api.test_sorted_price_asc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for api.test_swapi" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for api.test_sorted_price_asc" />
         <item itemvalue="Python tests.Python tests for api.test_6" />
         <item itemvalue="Robot.GET request price_asc" />
         <item itemvalue="Python tests.Python tests for api.test_kcentr_ru" />
         <item itemvalue="Python tests.Python tests for api.test_swapi" />
-        <item itemvalue="Robot.Success GET request to swapi/pepole" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685205040843</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Another commit from me">
+      <created>1685349759061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685349759061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
