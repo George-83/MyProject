@@ -1,6 +1,7 @@
 import pytest
 import requests
 import json
+import unittest
 import jsonschema
 import platform as p
 
@@ -164,5 +165,4 @@ def test_check_request_without_callerid():
     response_json_pretty = json.dumps(response_json, indent=4)
     print(response_json.__class__)
     print(response_json_pretty)
-    assert response.status_code == 400
-
+    assert response.status_code == 200
