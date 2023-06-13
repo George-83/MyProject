@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
-      <change afterPath="$PROJECT_DIR$/Tests/test_calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/test_converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,63 +37,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_calculator.TestCalculator.test_sum2">
-    <configuration name="Python tests for test_calculator.TestCalculator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestCalculator&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_calculator.TestCalculator.test_divide" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestCalculator.test_divide&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_calculator.TestCalculator.test_pi" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestCalculator.test_pi&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_calculator.TestCalculator.test_sqrt" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestCalculator.test_sqrt&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_converter.TestConverter">
     <configuration name="Python tests for test_calculator.TestCalculator.test_sum2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,13 +52,69 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_calculator.TestClass" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_calculator.TestClass&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_converter.TestConverter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_converter.TestConverter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_converter.TestConverter.test_converter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_converter.TestConverter.test_converter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_converter.TestConverter" />
+        <item itemvalue="Python tests.Python tests for test_converter.TestConverter.test_converter" />
+        <item itemvalue="Python tests.Python tests for test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function" />
+        <item itemvalue="Python tests.Python tests for test_calculator.TestClass" />
         <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator.test_sum2" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator.test_pi" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator.test_sqrt" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator.test_divide" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685560262681</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Another commit from me">
+      <created>1686552355708</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686552355708</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
