@@ -93,12 +93,13 @@ def test_check_sorting_by_price_asc():
     response_json = response.json()
     response_products = response_json["products"]
     sorted_by_price = sorted(response_products, key=lambda x: x["price"], reverse=False)
-    # pretty_response = json.dumps(response_json, indent=4)
+    pretty_response = json.dumps(response_json, indent=4)
     # comparator = response_json["products"][0]["price"]
     # sorted_by_price_pretty = json.dumps(sorted_by_price, indent=4)
     response_products_pretty = json.dumps(response_products, indent=4)
     # print(sorted_by_price.__class__)
-    print(response_products_pretty)
+    print(response_products.__class__)
+    print(pretty_response)
     # assert response.status_code == 200
     assert sorted_by_price == response_products
 

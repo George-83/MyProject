@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
+      <change afterPath="$PROJECT_DIR$/Tests/test_interview_preparation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_my_communities.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_my_communities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_ondoarding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_ondoarding.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +38,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_converter.TestConverter">
-    <configuration name="Python tests for test_calculator.TestCalculator.test_sum2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_interview_preparation.test_strings">
+    <configuration name="Python tests for Tests.test_interview_preparation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -45,11 +49,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestCalculator.test_sum2&quot;" />
+      <option name="_new_target" value="&quot;Tests.test_interview_preparation&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_calculator.TestClass" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Tests.test_interview_preparation.test_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +63,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestClass&quot;" />
+      <option name="_new_target" value="&quot;Tests.test_interview_preparation.test_api&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Tests.test_interview_preparation.test_lists" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +77,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function&quot;" />
+      <option name="_new_target" value="&quot;Tests.test_interview_preparation.test_lists&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_converter.TestConverter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_interview_preparation.test_lists" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,11 +91,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_converter.TestConverter&quot;" />
+      <option name="_new_target" value="&quot;test_interview_preparation.test_lists&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_converter.TestConverter.test_converter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_interview_preparation.test_strings" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,17 +105,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_converter.TestConverter.test_converter&quot;" />
+      <option name="_new_target" value="&quot;test_interview_preparation.test_strings&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_converter.TestConverter" />
-        <item itemvalue="Python tests.Python tests for test_converter.TestConverter.test_converter" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestClass.test_not_implemented_method.test_not_implemented_function" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestClass" />
-        <item itemvalue="Python tests.Python tests for test_calculator.TestCalculator.test_sum2" />
+        <item itemvalue="Python tests.Python tests for test_interview_preparation.test_strings" />
+        <item itemvalue="Python tests.Python tests for test_interview_preparation.test_lists" />
+        <item itemvalue="Python tests.Python tests for Tests.test_interview_preparation.test_lists" />
+        <item itemvalue="Python tests.Python tests for Tests.test_interview_preparation" />
+        <item itemvalue="Python tests.Python tests for Tests.test_interview_preparation.test_api" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686643255139</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Another commit from me">
+      <created>1686725665034</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686725665034</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
