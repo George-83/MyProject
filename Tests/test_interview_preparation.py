@@ -1,4 +1,9 @@
 import json
+from abc import ABC, abstractmethod
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
 
 import requests
 import unittest
@@ -208,3 +213,93 @@ values()	Returns a list of all the values in the dictionary
 def test_open_file():
     file = open("D:/Home PC Part_2/Downloads/Music/reveille-inside-out.mp3")
 
+
+def test_ui():
+    driver = webdriver.Chrome()
+    driver.set_window_size(1200, 900)
+    URL = "https://www.vanguardmotorsales.com/"
+    driver.get(URL)
+    time.sleep(2)
+    # cart_button = driver.find_element(By.XPATH, "(//a[@title='View Inventory'])[1]")
+    cart_button = driver.find_element(By.CSS_SELECTOR, ".vanguard-btn.lg")
+    # cart_button.click()
+    # time.sleep(2)
+    assert cart_button is not None
+
+
+class Person:
+    name = "Ivan"
+    age = 20
+
+    def params(self, name, age):
+        self.name = name
+        self.age = age
+
+
+class Student(Person):
+    course = 1
+
+
+igor = Student()
+igor.course = 2
+igor.params("Igor", 22)
+
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimetr(self):
+        pass
+
+
+class Rectangle(Shape, ABC):
+    def __int__(self, height, width):
+        self.height = height
+        self.width = width
+
+    def area(self):
+        pass
+
+    def perimetr(self):
+        pass
+
+
+# import MySQLdb
+# db=MySQLdb.connect(password="moonpie",database="thangs")
+
+
+def test_lists():
+    list_1 = [12, "banana", 99, "apple", 32, 12]
+    list_2 = [25, 44, 50, 99, 12, 15]
+    list_3 = list_2.sort()
+    print(list_1)
+    print(list_2)
+    print(list_3)
+
+
+def find_max(nums):
+    max_num = float("-inf")
+    for num in nums:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+
+def test_res():
+    result = find_max([12, 2, 56, 8, 3])
+    print(result)
+
+
+def test_tt():
+    # z = set('abc')
+    # z.add('san')
+    # z.update(set(['p', 'q']))
+    # print(z)
+    l1 = [1, 2, 3, 4]
+    l2 = [5, 6, 7]
+    result = l1.append(l2)
+    # result = l1 + l2
+    print(result)
