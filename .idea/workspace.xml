@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
+      <change afterPath="$PROJECT_DIR$/Tests/test_21.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/test_22.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_interview_preparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_interview_preparation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_epam_education.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_epam_education.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +37,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_interview_preparation.test_tt">
-    <configuration name="Python tests for test_api.test_check_filter_by_brand2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_22.test_99">
+    <configuration name="Python tests for test_21.TestStringMethods" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,11 +48,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.test_check_filter_by_brand2&quot;" />
+      <option name="_new_target" value="&quot;test_21.TestStringMethods&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_epam_education.TestCaseClass.test_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_22.Test_Mycl99" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +62,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_epam_education.TestCaseClass.test_3&quot;" />
+      <option name="_new_target" value="&quot;test_22.Test_Mycl99&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_interview_preparation.test_lists" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_22.test_99" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +76,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_interview_preparation.test_lists&quot;" />
+      <option name="_new_target" value="&quot;test_22.test_99&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_interview_preparation.test_res" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_21.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,11 +90,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_interview_preparation.test_res&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_21.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_interview_preparation.test_tt" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_22.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,17 +104,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_interview_preparation.test_tt&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_22.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_interview_preparation.test_tt" />
-        <item itemvalue="Python tests.Python tests for test_interview_preparation.test_res" />
-        <item itemvalue="Python tests.Python tests for test_api.test_check_filter_by_brand2" />
-        <item itemvalue="Python tests.Python tests for test_interview_preparation.test_lists" />
-        <item itemvalue="Python tests.Python tests for test_epam_education.TestCaseClass.test_3" />
+        <item itemvalue="Python tests.Python tests for test_22.test_99" />
+        <item itemvalue="Python tests.Python tests in test_22.py" />
+        <item itemvalue="Python tests.Python tests for test_21.TestStringMethods" />
+        <item itemvalue="Python tests.Python tests in test_21.py" />
+        <item itemvalue="Python tests.Python tests for test_22.Test_Mycl99" />
       </list>
     </recent_temporary>
   </component>
@@ -230,8 +232,26 @@
       <option name="project" value="LOCAL" />
       <updated>1687460977767</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Another commit from me">
+      <created>1688638085961</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688638085961</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

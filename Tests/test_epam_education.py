@@ -1,6 +1,7 @@
 # import unittest to use its   functionality.
 import sys
 import unittest
+import requests
 
 
 # Create new test case to implement and group tests.
@@ -79,3 +80,30 @@ class ExpectedFailureTestCase(unittest.TestCase):
     @unittest.expectedFailure
     def test_fail(self):
         self.assertEqual(1, 0, "broken")
+
+
+class CaseThis(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print("Start class method")
+
+    def test_open_url(self):
+        url = "https://swapi.dev/api/people/1/"
+        response = requests.get(url)
+        print(response.content)
+
+    def test_open_url_2(self):
+        url = "https://swapi.dev/api/people/1/"
+        response = requests.get(url)
+        print(response.content)
+
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    def test_split(self):
+        s = 'hello world'
+        self.assertEqual(s.split(), ['hello', 'world'])
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(ZeroDivisionError):
+            result = 10 / 0
