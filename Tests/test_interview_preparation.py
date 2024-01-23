@@ -84,6 +84,7 @@ def test_strings():
     # ---------------------------------------------------
     # \n - New Line
     # \' - Single Quote
+    # \" - Double Quote
     # \\ - Backslash
     # \r - Carriage Return
     # \t - Tab
