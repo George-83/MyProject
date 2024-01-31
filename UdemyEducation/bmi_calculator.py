@@ -1,7 +1,7 @@
 if __name__ == '__main__':
     # BMI Calculator
-    height = input("What is your height in metres (example: 1.87)? ")
-    weight = input("What is your weight? ")
+    height = input("What is your height in meters (example: 1.87)? ")
+    weight = input("What is your weight in kilograms? ")
     weight_as_int = int(weight)
     height_as_float = float(height)
     bmi = weight_as_int / height_as_float ** 2
