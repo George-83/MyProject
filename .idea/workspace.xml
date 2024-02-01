@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
-      <change afterPath="$PROJECT_DIR$/UdemyEducation/pizza_order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -391,7 +388,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706705116905</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Another commit from me">
+      <created>1706793001258</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1706793001258</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Another commit from me">
+      <created>1706793107464</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1706793107464</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Another commit from me">
+      <created>1706793139814</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1706793139814</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

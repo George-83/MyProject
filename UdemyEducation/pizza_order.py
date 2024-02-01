@@ -14,11 +14,9 @@ if __name__ == '__main__':
         print("Please enter correct size - S, M, or L")
     if add_pepperoni == "Y":
         if size == "S":
-            check = 15 + 2
-        elif size == "M":
-            check = 20 + 3
+            check += 2
         else:
-            check = 25 + 3
+            check += 3
     if extra_cheese == "Y":
         check += 1
     print(f"Thank you for choosing Python Pizza Deliveries! \nYour final bill is: ${check}.")
