@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
-      <change afterPath="$PROJECT_DIR$/UdemyEducation/leap_year.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UdemyEducation/pizza_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.leap_year">
+  <component name="RunManager" selected="Python.pizza_order">
     <configuration name="bmi_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tip_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pizza_order" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +157,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UdemyEducation/tip_calculator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UdemyEducation/pizza_order.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pizza_order" />
         <item itemvalue="Python.leap_year" />
         <item itemvalue="Python.bmi_calculator_2_0" />
         <item itemvalue="Python.bmi_calculator" />
         <item itemvalue="Python.odd_or_even (1)" />
-        <item itemvalue="Python.tip_calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706700162680</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Another commit from me">
+      <created>1706705116905</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1706705116905</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
