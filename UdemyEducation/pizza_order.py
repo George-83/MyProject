@@ -1,6 +1,9 @@
 if __name__ == '__main__':
     # Pizza Order Program
     size = input("What size pizza do you want? S, M, or L ").upper()
+    if size != "S" and size != "M" and size != "L":
+        print("Please enter correct size - S, M, or L")
+        quit()
     add_pepperoni = input("Do you want pepperoni? Y or N ").upper()
     extra_cheese = input("Do you want extra cheese? Y or N ").upper()
     check = 0
@@ -8,10 +11,8 @@ if __name__ == '__main__':
         check = 15
     elif size == "M":
         check = 20
-    elif size == "L":
-        check = 25
     else:
-        print("Please enter correct size - S, M, or L")
+        check = 25
     if add_pepperoni == "Y":
         if size == "S":
             check += 2
