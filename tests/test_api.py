@@ -7,7 +7,7 @@ import platform as p
 
 
 #
-# with open("../Resources/Schemas/people_info_schema.json") as sch:
+# with open("../resources/schemas/people_info_schema.json") as sch:
 #     valid_schema = json.load(sch)
 #
 #
@@ -38,7 +38,7 @@ import platform as p
 #
 #
 # def test_open_file():
-#     file = open('../Resources/Schemas/people_info_schema.json')
+#     file = open('../resources/schemas/people_info_schema.json')
 #     print('\n', type(file), '\n', file.read())
 #     file.close()
 #
@@ -67,7 +67,7 @@ import platform as p
 
 
 # Test Suite for website kcentr.ru
-# pytest -vm kcenter_api_test Tests/test_api.py
+# pytest -vm kcenter_api_test tests/test_api.py
 @pytest.mark.kcenter_api_test
 def test_check_sorting_by_price_asc():
     response = requests.get(
