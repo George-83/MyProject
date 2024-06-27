@@ -1,7 +1,7 @@
 import random
 
 if __name__ == '__main__':
-    names = input()
+    names = input("Type several names here: ")
     names_string = names.__str__()
     names = names_string.split(", ")
     names_length = len(names)
