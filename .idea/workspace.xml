@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aeeb3db-7b07-4bce-9ee1-a103b80f15aa" name="Changes" comment="Another commit from me">
-      <change afterPath="$PROJECT_DIR$/udemy_education/rock_paper_scissors_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_education/banker_roulette.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_education/banker_roulette.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_education/rock_paper_scissors_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_education/rock_paper_scissors_game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718537965601</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Another commit from me">
+      <created>1719502296179</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1719502296179</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
